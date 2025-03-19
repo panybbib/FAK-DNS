@@ -23,7 +23,7 @@ jobs:
 
     - name: Convert Conf Files
       env:
-        CN_DNS: https://dns.alidns.com/dns-query
+        CN_DNS: quic://dns.alidns.com
         THE_DNS: 127.0.0.1:7874
       run: python convert.py
 
