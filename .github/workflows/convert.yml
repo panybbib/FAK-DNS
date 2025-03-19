@@ -23,8 +23,8 @@ jobs:
 
     - name: Convert Conf Files
       env:
-        CN_DNS: ${{ secrets.CN_DNS }}
-        THE_DNS: ${{ secrets.THE_DNS }}
+        CN_DNS: https://dns.alidns.com/dns-query
+        THE_DNS: 127.0.0.1:7874
       run: python convert.py
 
     - name: Check for changes
